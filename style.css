@@ -1,0 +1,146 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;
+}
+
+.grandparent2{
+    padding: 15px;
+}
+.grandparent3{
+    background-color: lightgray;
+    padding: 15px;
+}
+.child1{
+    position: fixed;
+    width: 100%;
+}
+.child5,.child4{
+    margin: 30px;
+}
+.child2{
+padding-top: 100px;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent3,.parent2{
+    max-width: 1000px; height: auto; 
+    display: flex;
+    margin: auto;
+}
+.parent1{
+        background-color:#f44336;
+    height: 500px;
+    margin: auto;
+}
+.grandparent4{
+    width: 100%;
+}
+.h1{
+    margin: 60px;
+}
+.child1{
+    border: #f44336;
+box-shadow: 5PX 5PX 10PX 3PX black;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+list-style: none;
+height: 50px;
+line-height: 50px;
+background-color:#f44336;
+font-size: 15px;
+}
+li{
+    float: left;
+} 
+a{
+    font-size:22px;
+    display: block;
+        padding: 0 30px;
+color:azure;
+text-decoration: none;
+}
+.first-nav{
+    background-color: aliceblue;
+ color: black;   
+}
+.first-nav:hover{
+    background-color: lightgray;
+}
+a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.anchor{
+    font-size: 200PX;
+    color: RED;
+}
+h5{
+    padding: 32px 0px;
+    font-family: "Lato", sans-serif;
+    
+}
+.mug{
+    font-size: 150px;
+    color: red;
+}
+
+button:hover{
+    background-color:gray;
+    color: black;
+    }
+    button{
+        background-color: black;
+        color: aliceblue;
+        padding: 10px 40px;
+        font-size: 18PX;
+        border-style: none;
+margin: 30px;
+    }
+    .h1-4{
+        text-align: center;
+        margin: 0;
+    color: black;
+    font-size: 24px;
+}
+.greyl{
+    background-color: gray;
+    line-height: 120px;
+}
+.lastdiv{
+    line-height: 80px;
+}
+.pl{
+    line-height: 80px;
+}
+    
+
+
+@media only screen and ( max-width:600px ) {
+    .parent2{
+        flex-direction: column-reverse;
+padding-top: 100px;
+    }
+    .parent3{
+        flex-direction: column;
+        height: auto;
+padding-top: 100px;
+
+        }
+    .child4,.child5{
+        margin: auto;
+        margin-bottom:30px ;
+padding-bottom: 30px;
+    }
+    li{
+        display: none;
+    }
+    ul :first-child{
+        display: list-item;
+    }
+}
+
